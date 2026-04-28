@@ -8,3 +8,7 @@ Backend/.env
 
 # Build
 Frontend/dist
+
+# Root package files (accidentally created)
+package.json
+package-lock.json

@@ -6,7 +6,7 @@ import {
   RiMenuUnfoldLine,
   RiFileListLine,
   RiLogoutBoxLine,
-  RiArrowGoBackLine 
+  RiArrowGoBackLine,
 } from "react-icons/ri";
 import { BotIcon } from "../components/animated-icons/BotIcon";
 import { useInterview } from "../hooks/useInterview";
@@ -176,7 +176,11 @@ const Interview = () => {
           onClick={() => navigate("/")}
           title={sidebarOpen ? "Collapse sidebar" : "Expand sidebar"}
         >
-          {sidebarOpen ? <RiArrowGoBackLine size={23} /> : <RiArrowGoBackLine size={23} />}
+          {sidebarOpen ? (
+            <RiArrowGoBackLine size={23} />
+          ) : (
+            <RiArrowGoBackLine size={23} />
+          )}
         </button>
 
         <button
